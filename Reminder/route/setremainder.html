@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/setremainder.css">
+</head>
+<body>
+    <div class="header">SET REMAINDER</div>
+
+    <div class="body">
+        <form action="..\api\setreminder.php" method="POST">
+        <div class="details"><label for="cars">SUBJECT:</label></div>
+<div class="select">
+<select name="subject" id="s1">
+  <option value=1>Important</option>
+  <option value=2>Call</option>
+  <option value=3>Birthdays</option>
+  <option value=4>Tasks</option>
+</select></div>
+        <input type="date" name="date">
+        <div class="details">
+            <label for="">description</label></div>
+
+            <div class="details1">
+            <input type="text" name="description">
+        </div>
+        <div class="details">
+            <label for="">email</label></div>
+            <div class="details1">
+            <input type="text" name="email">
+        </div>
+        <div class="details">
+            <label for="">Contact no.</label></div>
+            <div class="details1">
+            <input type="text" name="phone">
+        </div>
+        <div class="details">
+            <label for="">sms no.</label></div>
+            <div class="details1">
+            <input type="text" name="sms">
+        </div>
+        
+        <div class="details">
+            <label for="">Enter your remainder</label></div>
+            <div class="details1">
+            <input type="text" name="details">
+        </div>
+        <button type="submit">Save</button>
+    </form>
+
+    <button onclick="window.location.href = '../';">LOGOUT</button>
+</body>
+</html>
